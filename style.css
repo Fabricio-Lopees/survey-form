@@ -1,0 +1,85 @@
+*{
+	padding:0;
+	margin:0;
+	font-size: border-box;
+}
+body{
+	background-color: #ededed;
+}
+header{
+	height: 80px;
+	margin-bottom: 20px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+main{
+	background: white;
+	width: 30%;
+	padding: 20px;
+	margin: 10px auto;
+	border: 2px solid black;
+}
+
+#survey-form{
+	display: flex;
+	flex-direction: column;
+}
+#name-label, #email-label, #number-label{
+	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#name, #email, #number{
+	width: 240px;
+	height: 20px;
+	padding: 5px;
+	outline: none;
+	border:2px solid transparent;
+	border-radius: 5px;
+	transition: .4s;
+}
+#name:focus, #email:focus, #number:focus{
+	border-color: black;
+}
+.fieldset-gender{
+	padding: 10px;
+	margin: 10px 0 20px 0;
+}
+label[for="dropdown"]{
+	margin-bottom: 5px;
+}
+select{
+	height: 30px;
+	outline: none;
+	border: 1.5px solid black;
+	background: none;
+	margin-bottom: 20px;
+}
+.fieldset-use-level{
+	padding: 10px 5px;
+	display: flex;
+	flex-direction: column;
+}
+label[for="comment-field"]{
+	margin: 10px 0;
+}
+textarea{
+	height: 90px;
+	resize: none;
+}
+button{
+	color: white;
+	background: black;
+	height: 30px;
+	margin: 10px 0 0 0;
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+}
+button:hover{
+	opacity: 0.8;
+}

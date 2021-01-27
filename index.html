@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">This is a form in which you answer some questions so that we can understand our users and consequently improve the website.</p>
+	</header>
+	<main>
+		<form id="survey-form">
+			<label for="name" id="name-label">Name
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			</label>
+			
+			<label for="email" id="email-label">Email
+				<input type="email" id="email" name="email" placeholder="Enter your email" required>
+			</label>
+
+			<label for="number" id="number-label">Age
+				<input type="number" id="number" placeholder="Your age" min="0" max="200" required>
+			</label>
+			<fieldset class="fieldset-gender">
+				<legend>What is your gender?</legend>
+				<input type="radio" id="male" name="gender" value="male" checked>
+				<label for="male" id="male-gender-option">Male</label>
+
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female" id="female-gender-option">Female</label>
+				
+				<input type="radio" id="other" name="gender" value="other-gender">
+				<label for="other" id="other-gender-option">Other</label>
+			</fieldset>
+
+			<label for="dropdown">What is your level of use of this website?</label>
+			<select id="dropdown">
+				<option></option>
+				<option value="low">Few times</option>
+				<option value="medium">Reasonable</option>
+				<option value="high">Often</option>
+			</select>
+	
+			<fieldset class="fieldset-use-level">
+				<legend>For what reasons you use our website?</legend>
+
+				<label for="stay-on-top-option">
+				<input type="checkbox" id="stay-on-top-option" value="stay-on-top-option">
+				To stay on top of the technological world
+				</label>
+				
+				<label for="learn-option">
+				<input type="checkbox" id="learn-option" value="learn-option">
+				To learn new things
+				</label>
+				
+				<label for="forum-option">
+				<input type="checkbox" id="forum-option" value="forum-option">
+				Participate in the forum and help people or be helped
+				</label>
+
+				<label for="others-option">
+				<input type="checkbox" id="others-option" value="others">
+				Others
+				</label>
+			</fieldset>
+
+			<label for="comment-field">Add comment (optional):</label>
+			<textarea></textarea>
+
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</main>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
